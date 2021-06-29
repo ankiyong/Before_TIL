@@ -3,4 +3,4 @@ sumi = 0
 for i in range(1,11):
     print(i)
     sumi += i
-print('1부터 10까지 누적합 = %d' % sumi)
+print(sumi)

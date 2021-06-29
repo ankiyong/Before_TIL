@@ -3,11 +3,11 @@
 
 scores = [90,57,88,45,78]
 
-num = 0
+number = 0
 for score in scores:
-    num += 1
+    number += 1
     if score >= 60:
         result = '합격'
     else:
         result = '불합격'
-    print('%d번 %d점 %s' % (num,score,result))
+    print('%d번 %d점 %s' % (number,score,result))

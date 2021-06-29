@@ -9,6 +9,6 @@ for member in members:
     else:
         find = False
 if find == True:
-    print('명단에 있습니다')
+    print('명단에 있습니다.')
 else:
-    print('명단에 없습니다')
+    print('명단에 없습니다.')
