@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[5]:
+# In[1]:
 
 
 import pandas as pd
@@ -423,10 +423,56 @@ del s['대전'] #시리즈의 값을 제거
 s
 
 
-# In[ ]:
+# In[2]:
 
 
+s1 = pd.Series([1,1,2,1,2,2,1,1,3,3,4,5,5,7,np.NaN])
+s1
 
+
+# In[3]:
+
+
+len(s1) #nan값을 포함한 개수
+
+
+# In[4]:
+
+
+s1.size #nan값을 포함한 개수
+
+
+# In[5]:
+
+
+s1.shape #시리즈의 배열 형태를 보여줌 / 현재 15개의 행만 존재하여 15, 로 출력
+
+
+# In[6]:
+
+
+s1.count() #nan값을 제외한 개수
+
+
+# In[10]:
+
+
+a = np.array([2,2,2,2,np.NaN])
+b = pd.Series(a)
+a.mean() #np.array의 평균계산 시 nan값 포함되면 계산 불가
+b.mean() #nan값이 포함된 array를 시리즈화 하면 nsn값을 제외시키고 계산 진행
+
+
+# In[11]:
+
+
+s1.mean()
+
+
+# In[13]:
+
+
+s1.value_counts() #각 원소를 같은 값끼리 그룹을 만들고 개수를 세서 반환
 
 
 # In[ ]:
